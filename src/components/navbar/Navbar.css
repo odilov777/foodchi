@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .cart-wrapper{
+  position: relative;
+  width: 55px;
+  height: 55px;
+  background-color: hsl(183, 56%, 48%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .cart-count{
+  position: absolute;
+  left: 40px;
+  top: -10px;
+  color: #05f7ff;
+  font-size: 17px;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border: 0.5px solid rgb(224, 224, 224);
+  border-radius: 50%;
+  padding-top: 2px;
+  }
+  .Navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 0;
+  }
+  
+  .Navbar-Wrapper {
+    height: 80px;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .text-wrapper {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .text-wrapper img {
+    margin-top: -10px;
+  }
+  
+  .text-wrapper a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .text-wrapper a:active {
+    color: aqua;
+  }
+  .menu-toggle {
+    display: none; /* Hidden by default */
+  }
+  @media (max-width: 1300px) {
+    .text-wrapper {
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      width: 70%;
+    }
+    .Navbar-Wrapper{
+      width: 90%;
+    }
+  }
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex; 
+      cursor: pointer;
+      align-items: center;
+    }
+  
+    .text-wrapper {
+      display: none; 
+      
+    }
+  
+    .text-wrapper.active {
+      display: flex; 
+      flex-direction: column;
+      justify-content: space-around;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      background-color: #fff;
+      width: 50%;
+      height: 100vh;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: rgb(74, 85, 85);
+      z-index: 5;
+      
+    }
+  
+    .text-wrapper a {
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      width: 100%;
+      color: white;
+    }
+  }
+  
